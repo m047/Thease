@@ -1,0 +1,3 @@
+[submodule "Thease/vendor/spdlog"]
+	path = Thease/vendor/spdlog
+	url = https://github.com/gabime/spdlog

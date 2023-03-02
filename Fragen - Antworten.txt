@@ -14,3 +14,20 @@ Name 2 differences between git and other version control systems:
 Name known issues related to game engines (Unreal, Unity) and version control systems:
 - Some files can't be merged directly, e.g. a scene in Unity can't really be merged by git
 - Some files in games are very large and make the repository grow
+
+
+Describe a logging system with your own words:
+A logging system is a system to write important information on the behaviour, successes and failures of the program to a file or the console.
+What is the difference between git submodules and git subtrees?
+- Submodules are a link to another module, so use it if you don't intend to change anything and want to have the newest version when it updates
+- Subtrees are a copy of another module, so use it if you intend to change the module and don't want to get the new versions automatically
+What is a build system in C++? Name 3 build systems:
+A build system combines dependencies and pre-/post-buildsteps to simplify the process of building a project.
+- Make
+- CMake
+- Premake
+What is a package manager in C++? Name 3 package manager:
+A package manager takes care of installing, upgrading, configuring, and removing packages.
+- vcpkg
+- Conan
+- build2

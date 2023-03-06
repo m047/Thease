@@ -4,6 +4,9 @@
     <Filter Include="Thease">
       <UniqueIdentifier>{1F5C63D3-0BFE-8DA9-F4B8-A1FDE0F914FA}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Thease\Events">
+      <UniqueIdentifier>{234FF2D5-8F0F-6E0C-584A-B789C4C9B2E8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Thease.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Thease\EntryPoint.h">
       <Filter>Thease</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thease\Events\ApplicationEvent.h">
+      <Filter>Thease\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thease\Events\Event.h">
+      <Filter>Thease\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thease\Events\KeyEvent.h">
+      <Filter>Thease\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thease\Events\MouseEvent.h">
+      <Filter>Thease\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Thease\Log.h">
       <Filter>Thease</Filter>

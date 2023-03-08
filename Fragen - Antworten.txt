@@ -31,3 +31,14 @@ A package manager takes care of installing, upgrading, configuring, and removing
 - vcpkg
 - Conan
 - build2
+
+
+What is the difference between a dynamic linked library and a static library?
+A dynamic linked library is accessed during runtime to find the used functions. A static library is incorporated in the compiled code and will always be there at runtime.
+Describe a logging system with your own words:
+A logging system is a system that tracks important information on events happening during runtime and writes it to file(s). It should be accessible from all parts of the engine.
+What is a Design Pattern?
+A design pattern is a standard way to deal with a recurring problem or challenge. It shows an architecture and interfaces of classes.
+Name and describe 2 Design Patterns (except façade or adapter):
+- Observer: There's an observer and observables. The observer will save a collection of observables and implement a callback function. The observable implements a notifyAll function, that notifies all its observers.
+- Singleton: This pattern garantuees that the Singleton is the only object of that class, i.e. there can't be other objects of that class. This is done by creating a static reference in the class that always references the only object. The constructor is private and a static method either returns the reference or creates the object accordingly.

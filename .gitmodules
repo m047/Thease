@@ -1,3 +1,6 @@
 [submodule "Thease/vendor/spdlog"]
 	path = Thease/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Thease/vendor/GLFW"]
+	path = Thease/vendor/GLFW
+	url = https://github.com/TheCherno/glfw

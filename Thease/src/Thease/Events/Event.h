@@ -1,9 +1,7 @@
 #pragma once
 
+#include "thpch.h"
 #include "Thease/Core.h"
-
-#include <string>
-#include <functional>
 
 namespace Thease {
 	enum class EventType

@@ -10,6 +10,12 @@ workspace "Thease"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Thease/vendor/GLFW/include"
+
+include "Thease/vendor/GLFW"
+
 project "Thease"
 	location "Thease"
 	kind "SharedLib"
@@ -18,6 +24,9 @@ project "Thease"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 	
+	pchheader "thpch.h"
+	pchsource "Thease/src/thpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",
@@ -27,7 +36,14 @@ project "Thease"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 	
 	filter "system:windows"

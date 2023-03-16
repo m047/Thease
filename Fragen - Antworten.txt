@@ -42,3 +42,15 @@ A design pattern is a standard way to deal with a recurring problem or challenge
 Name and describe 2 Design Patterns (except façade or adapter):
 - Observer: There's an observer and observables. The observer will save a collection of observables and implement a callback function. The observable implements a notifyAll function, that notifies all its observers.
 - Singleton: This pattern garantuees that the Singleton is the only object of that class, i.e. there can't be other objects of that class. This is done by creating a static reference in the class that always references the only object. The constructor is private and a static method either returns the reference or creates the object accordingly.
+
+What is a precompiled header? Name pros and cons:
+A precompiled header is a file that combines lots of imports and is only recompiled when it changes.
+Pros:
+- Saves compilation time
+- Saves time writing code, because you only have to include the pch file
+Cons:
+- Dependency rot -> it's hard to tell what each file depends on exactly; code might be hard to reuse without including all of it
+- Can be slower when used in small projects
+Describe the layer of abstraction with your own words:
+When you're using an external library, you should put an abstraction layer in front of it. This means that you are implementing an interface, that controls all interaction of your Code and the library. This helps when you later want to replace the library because you only have to edit your abstraction layer.
+Name the SOLID principles and describe them briefly:

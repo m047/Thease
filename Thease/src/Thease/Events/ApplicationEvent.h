@@ -1,8 +1,7 @@
 #pragma once
 
+#include "thpch.h"
 #include "Event.h"
-
-#include <sstream>
 
 namespace Thease {
 
